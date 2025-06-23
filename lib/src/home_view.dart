@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:card_play/src/card_game.dart';
+import 'package:card_play/src/user_repository.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -52,7 +53,20 @@ class _HomeViewState extends State<HomeView> {
         title: Text('$money원'),
         centerTitle: true,
       ),
-      body: CardGameWidget(initCards: initCards),
+      body: Column(
+        children: [
+          const SizedBox(height: 250),
+          CardGameWidget(initCards: initCards),
+          const SizedBox(height: 250),
+          ElevatedButton(
+            onPressed: (){
+               Navigator.push(
+              context, MaterialPageRoute(builder: (context) => UserListScreen()));
+            }, 
+            child: Text('Json 테스트'),),
+            const SizedBox(height: 50),
+        ],
+      ),
       bottomNavigationBar: Padding(
         padding: EdgeInsets.only(
           bottom: MediaQuery.of(context).padding.bottom,

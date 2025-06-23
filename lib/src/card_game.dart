@@ -38,7 +38,6 @@ class _CardGameWidgetState extends State<CardGameWidget> {
     gameCards.add(card);
     update();
   }
-
   void update() => setState(() {});
 
   @override

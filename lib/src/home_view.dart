@@ -28,12 +28,13 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   int money = 400;
   List<String> initCards = List.unmodifiable([]);
+  //
   void makeInitCards() {
     if (money - 100 < 0) return;
     money -= 100;
     var cards = [];
 
-    List.generate(1, (index) {
+    List.generate(0, (index) {
       var index = Random().nextInt(HomeView.cardList.length);
       var card = HomeView.cardList[index];
       cards.add(card);

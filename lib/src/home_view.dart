@@ -1,8 +1,9 @@
 import 'dart:math';
 
 import 'package:card_play/src/card_game.dart';
-import 'package:card_play/src/user_screen/user_list_screen.dart';
+import 'package:card_play/presentaion/user_screen/user_list_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeView extends StatefulWidget {
   static List<String> cardList = const [
@@ -60,9 +61,10 @@ class _HomeViewState extends State<HomeView> {
           const SizedBox(height: 250),
           ElevatedButton(
             onPressed: (){
-               Navigator.push(
-              context, MaterialPageRoute(
-                builder: (context) => UserListScreen()));
+              Get.to(()=> UserListScreen());
+              //  Navigator.push(
+              // context, MaterialPageRoute(
+              //   builder: (context) => UserListScreen()));
             }, 
             child: Text('Json 테스트'),),
             const SizedBox(height: 50),

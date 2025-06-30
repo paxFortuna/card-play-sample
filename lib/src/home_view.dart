@@ -61,7 +61,8 @@ class _HomeViewState extends State<HomeView> {
           const SizedBox(height: 250),
           ElevatedButton(
             onPressed: (){
-              Get.to(()=> UserListScreen());
+              Get.toNamed('/userlist');
+              // Get.to(()=> UserListScreen());
               //  Navigator.push(
               // context, MaterialPageRoute(
               //   builder: (context) => UserListScreen()));

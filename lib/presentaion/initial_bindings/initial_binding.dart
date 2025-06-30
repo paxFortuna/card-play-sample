@@ -1,6 +1,5 @@
 import 'package:card_play/data/data_source/user_api.dart';
 import 'package:card_play/data/repository_impl/user_api_repository_impl.dart';
-import 'package:card_play/domain/model/user.dart';
 import 'package:card_play/domain/repository/user_repository.dart';
 import 'package:card_play/presentaion/controller/user_controller.dart';
 import 'package:get/get.dart';

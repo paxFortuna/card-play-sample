@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:card_play/src/card_game.dart';
-import 'package:card_play/presentaion/user_screen/user_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

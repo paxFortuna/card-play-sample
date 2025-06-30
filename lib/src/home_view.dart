@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:card_play/src/card_game.dart';
-import 'package:card_play/src/user_repository.dart';
+import 'package:card_play/src/user_screen/user_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -61,7 +61,8 @@ class _HomeViewState extends State<HomeView> {
           ElevatedButton(
             onPressed: (){
                Navigator.push(
-              context, MaterialPageRoute(builder: (context) => UserListScreen()));
+              context, MaterialPageRoute(
+                builder: (context) => UserListScreen()));
             }, 
             child: Text('Json 테스트'),),
             const SizedBox(height: 50),

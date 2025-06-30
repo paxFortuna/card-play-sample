@@ -13,6 +13,6 @@ class UserController extends GetxController {
   Future<List<User>> fetch() async {
     final result = await userApiRepository.fetch();
    _users.value = result;
-  return _users.toList();
+  return _users.toList(); // toList() 없어도 됨.
   }
 }

@@ -1,5 +1,5 @@
 import 'package:card_play/domain/model/user.dart';
-import 'package:card_play/domain/repository/user_repository.dart';
+import 'package:card_play/domain/repository/user_api_repository.dart';
 import 'package:get/get.dart';
 
 class UserController extends GetxController {
